@@ -11,7 +11,7 @@
 		3022A90F923E5B2600C0628B /* Pods_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B7CD09FF66C7C7BCDA596E /* Pods_UnitTests.framework */; };
 		3C6E4502D37223B1144CECF3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		84307DE0C0C1536D1175EB7D /* Pods_Snapshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CA6433C59DE1E2B5DC7E3F /* Pods_Snapshot.framework */; };
-		BF50BECE24364D3E001A1187 /* SignInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C80D2436435300737959 /* SignInTests.swift */; };
+		BF50BEE124365D98001A1187 /* SignInSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */; };
 		BF87C7F72436435300737959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7F62436435300737959 /* AppDelegate.swift */; };
 		BF87C7F92436435300737959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7F82436435300737959 /* SceneDelegate.swift */; };
 		BF87C7FB2436435300737959 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7FA2436435300737959 /* SignInController.swift */; };
@@ -66,6 +66,7 @@
 		BC20860547C8902AAAE606BB /* Pods-Snapshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.release.xcconfig"; path = "Target Support Files/Pods-Snapshot/Pods-Snapshot.release.xcconfig"; sourceTree = "<group>"; };
 		BF50BED624364D3E001A1187 /* SnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF50BEDE24365CDF001A1187 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSnapshotTests.swift; sourceTree = "<group>"; };
 		BF87C7F32436435300737959 /* Snapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF87C7F62436435300737959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF87C7F82436435300737959 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +152,7 @@
 		BF50BEC824364BCF001A1187 /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
+				BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */,
 				BF50BEDE24365CDF001A1187 /* Info.plist */,
 			);
 			path = SnapshotTests;
@@ -547,7 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF50BECE24364D3E001A1187 /* SignInTests.swift in Sources */,
+				BF50BEE124365D98001A1187 /* SignInSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
