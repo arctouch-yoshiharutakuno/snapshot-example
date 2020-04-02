@@ -1,3 +1,5 @@
 language: swift
 osx_image: xcode11.3
-script: xcodebuild clean -scheme Snapshot -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.2.2' build test
+os: osx
+xcode_sdk: iphonesimulator13.2
+script: xcodebuild clean -scheme Snapshot -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=13.2' build test
