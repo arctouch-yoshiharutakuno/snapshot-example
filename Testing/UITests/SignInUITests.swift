@@ -1,6 +1,6 @@
 import XCTest
 
-final class SnapshotUITests: XCTestCase {
+final class SignInUITests: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false

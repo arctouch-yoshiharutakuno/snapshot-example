@@ -1,7 +1,7 @@
 import XCTest
 @testable import Snapshot
 
-final class SnapshotTests: XCTestCase {
+final class SignInTests: XCTestCase {
 
     override func setUpWithError() throws {
     }
