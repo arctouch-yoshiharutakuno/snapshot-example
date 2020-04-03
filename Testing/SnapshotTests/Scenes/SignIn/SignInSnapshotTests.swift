@@ -10,8 +10,8 @@ final class SignInSnapshotTests: PixelTestCase {
 
     func testSignInView() {
         let storyboard = UIStoryboard(name: Constants.storyboardName, bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: Constants.signInViewControllerIdentifier)
-        verify(controller, layoutStyle: .fixed(width: 400, height: 700))
+        let signInViewController = storyboard.instantiateViewController(withIdentifier: Constants.signInViewControllerIdentifier)
+        verify(signInViewController, layoutStyle: .fixed(width: 400, height: 700))
     }
 
 }
