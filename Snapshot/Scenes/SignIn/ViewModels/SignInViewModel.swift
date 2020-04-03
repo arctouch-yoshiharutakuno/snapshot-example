@@ -9,13 +9,10 @@ enum SignInViewModelState {
 
 final class SignInViewModel {
 
-    typealias CompletionHandler = () -> Void
-
     @Published private(set) var state: SignInViewModelState = .none
 
     func signIn(email: String?,
-                password: String?,
-                completion: CompletionHandler?) {
+                password: String?) {
         state = .loading
 
         guard
@@ -31,7 +28,6 @@ final class SignInViewModel {
             return
         }
         state = .success
-        completion?()
     }
 
     private func verifyCredentials(email: String, password: String) -> Bool {

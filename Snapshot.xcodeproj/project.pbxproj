@@ -13,6 +13,7 @@
 		BF4B3A8E2437863B008F8035 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */; };
 		BF4B3A9124379F0A008F8035 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A9024379F0A008F8035 /* String+Extension.swift */; };
 		BF4B3A932437A600008F8035 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */; };
+		BF4B3A992437C6B7008F8035 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A972437C681008F8035 /* StringExtensionTests.swift */; };
 		BF50BEE124365D98001A1187 /* SignInSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */; };
 		BF87C7F72436435300737959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7F62436435300737959 /* AppDelegate.swift */; };
 		BF87C7F92436435300737959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7F82436435300737959 /* SceneDelegate.swift */; };
@@ -22,6 +23,8 @@
 		BF87C8032436435300737959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF87C8012436435300737959 /* LaunchScreen.storyboard */; };
 		BF87C80E2436435300737959 /* SignInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C80D2436435300737959 /* SignInTests.swift */; };
 		BF87C8192436435300737959 /* SignInUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C8182436435300737959 /* SignInUITests.swift */; };
+		BFEB10E12437D39500A1F4AF /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEB10E02437D39500A1F4AF /* SignInScreen.swift */; };
+		BFEB10E32437D45E00A1F4AF /* UIITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEB10E22437D45E00A1F4AF /* UIITestBase.swift */; };
 		CCC864C88EAFE33BB8CD1220 /* Pods_Snapshot_SnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA862D2D29D92FBB59CCC79 /* Pods_Snapshot_SnapshotTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,7 @@
 		BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		BF4B3A9024379F0A008F8035 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BF4B3A972437C681008F8035 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		BF50BED624364D3E001A1187 /* SnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF50BEDE24365CDF001A1187 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSnapshotTests.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 		BF87C8142436435300737959 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF87C8182436435300737959 /* SignInUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUITests.swift; sourceTree = "<group>"; };
 		BF87C81A2436435300737959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFEB10E02437D39500A1F4AF /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		BFEB10E22437D45E00A1F4AF /* UIITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIITestBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +158,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BF4B3A942437C4F6008F8035 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B3A972437C681008F8035 /* StringExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF4B3A952437C508008F8035 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B3A962437C518008F8035 /* SignIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BF4B3A962437C518008F8035 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BF87C80D2436435300737959 /* SignInTests.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		BF50BEC724364A3D001A1187 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +195,7 @@
 		BF50BEC824364BCF001A1187 /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */,
+				BFEB10DE2437D1EC00A1F4AF /* Scenes */,
 				BF50BEDE24365CDF001A1187 /* Info.plist */,
 			);
 			path = SnapshotTests;
@@ -268,7 +298,8 @@
 		BF87C80C2436435300737959 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF87C80D2436435300737959 /* SignInTests.swift */,
+				BF4B3A942437C4F6008F8035 /* Extensions */,
+				BF4B3A952437C508008F8035 /* Scenes */,
 				BF87C80F2436435300737959 /* Info.plist */,
 			);
 			path = UnitTests;
@@ -277,10 +308,52 @@
 		BF87C8172436435300737959 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				BF87C8182436435300737959 /* SignInUITests.swift */,
+				BFEB10E22437D45E00A1F4AF /* UIITestBase.swift */,
+				BFEB10DD2437D1CD00A1F4AF /* Scenes */,
 				BF87C81A2436435300737959 /* Info.plist */,
 			);
 			path = UITests;
+			sourceTree = "<group>";
+		};
+		BFEB10DB2437D1B400A1F4AF /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BFEB10DF2437D37A00A1F4AF /* Helpers */,
+				BF87C8182436435300737959 /* SignInUITests.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		BFEB10DC2437D1C100A1F4AF /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		BFEB10DD2437D1CD00A1F4AF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BFEB10DB2437D1B400A1F4AF /* SignIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BFEB10DE2437D1EC00A1F4AF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BFEB10DC2437D1C100A1F4AF /* SignIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BFEB10DF2437D37A00A1F4AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFEB10E02437D39500A1F4AF /* SignInScreen.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E4BEF07C6F216628D01EFBF0 /* Frameworks */ = {
@@ -585,6 +658,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4B3A992437C6B7008F8035 /* StringExtensionTests.swift in Sources */,
 				BF87C80E2436435300737959 /* SignInTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +668,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF87C8192436435300737959 /* SignInUITests.swift in Sources */,
+				BFEB10E12437D39500A1F4AF /* SignInScreen.swift in Sources */,
+				BFEB10E32437D45E00A1F4AF /* UIITestBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

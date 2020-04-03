@@ -17,15 +17,17 @@ final class SignInController: UIViewController {
 
     private func configureViewModel() {
         viewModel = SignInViewModel()
-        subscriber = viewModel?.$state.sink(receiveValue: { [weak self] (state) in
+        subscriber = viewModel?.$state.sink(receiveValue: { [weak self] state in
             self?.stateDidChange(withState: state)
         })
     }
 
     @IBAction private func signinDidTap(_ sender: Any) {
-        viewModel?.signIn(email: emailTextField.text, password: passwordTextField.text, completion: {
-            
-        })
+        viewModel?.signIn(email: emailTextField.text, password: passwordTextField.text)
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 
 }
