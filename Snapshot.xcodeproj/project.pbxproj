@@ -10,7 +10,9 @@
 		0CD0F0471535C3492A85BD48 /* Pods_Snapshot_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1A3C6CE626B49052B171EF /* Pods_Snapshot_UITests.framework */; };
 		3022A90F923E5B2600C0628B /* Pods_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B7CD09FF66C7C7BCDA596E /* Pods_UnitTests.framework */; };
 		3C6E4502D37223B1144CECF3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		84307DE0C0C1536D1175EB7D /* Pods_Snapshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CA6433C59DE1E2B5DC7E3F /* Pods_Snapshot.framework */; };
+		BF4B3A8E2437863B008F8035 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */; };
+		BF4B3A9124379F0A008F8035 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A9024379F0A008F8035 /* String+Extension.swift */; };
+		BF4B3A932437A600008F8035 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */; };
 		BF50BEE124365D98001A1187 /* SignInSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */; };
 		BF87C7F72436435300737959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7F62436435300737959 /* AppDelegate.swift */; };
 		BF87C7F92436435300737959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87C7F82436435300737959 /* SceneDelegate.swift */; };
@@ -64,6 +66,9 @@
 		B0964ECFBE266D5935FCB8BA /* Pods-Snapshot-SnapshotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot-SnapshotUITests.release.xcconfig"; path = "Target Support Files/Pods-Snapshot-SnapshotUITests/Pods-Snapshot-SnapshotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA7D3A1A16538BAEBF494682 /* Pods-Snapshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.debug.xcconfig"; path = "Target Support Files/Pods-Snapshot/Pods-Snapshot.debug.xcconfig"; sourceTree = "<group>"; };
 		BC20860547C8902AAAE606BB /* Pods-Snapshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.release.xcconfig"; path = "Target Support Files/Pods-Snapshot/Pods-Snapshot.release.xcconfig"; sourceTree = "<group>"; };
+		BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		BF4B3A9024379F0A008F8035 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BF50BED624364D3E001A1187 /* SnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF50BEDE24365CDF001A1187 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF50BEE024365D98001A1187 /* SignInSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSnapshotTests.swift; sourceTree = "<group>"; };
@@ -96,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84307DE0C0C1536D1175EB7D /* Pods_Snapshot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +141,15 @@
 				6373D5CE12E8AABAD6900AB1 /* Pods-Snapshot-SnapshotTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF4B3A8F24379EDC008F8035 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B3A9024379F0A008F8035 /* String+Extension.swift */,
+				BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BF50BEC724364A3D001A1187 /* Testing */ = {
@@ -213,6 +226,7 @@
 		BF50BEDD24365681001A1187 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -243,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				BF50BED7243655AA001A1187 /* Application */,
+				BF4B3A8F24379EDC008F8035 /* Extensions */,
 				BF50BED8243655C7001A1187 /* Resources */,
 				BF50BED9243655ED001A1187 /* Scenes */,
 				BF87C8042436435300737959 /* Info.plist */,
@@ -557,8 +572,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4B3A932437A600008F8035 /* UIViewController+Extension.swift in Sources */,
+				BF4B3A8E2437863B008F8035 /* SignInViewModel.swift in Sources */,
 				BF87C7FB2436435300737959 /* SignInController.swift in Sources */,
 				BF87C7F72436435300737959 /* AppDelegate.swift in Sources */,
+				BF4B3A9124379F0A008F8035 /* String+Extension.swift in Sources */,
 				BF87C7F92436435300737959 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@ final class SignInTests: XCTestCase {
     }
 
     func testExample() throws {
+        XCTAssertEqual("Friday", "Friday")
     }
 
     func testPerformanceExample() throws {
