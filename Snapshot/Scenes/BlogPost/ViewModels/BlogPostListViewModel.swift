@@ -1,6 +1,7 @@
 final class BlogPostListViewModel {
 
     private(set) lazy var blogPostCellIdentifier = "BlogPostListTableViewCell"
+    private(set) lazy var blogPostTableViewIdentifier = "blogPostTableView"
     private(set) var blogPostList: [BlogPostListCellViewModel]?
 
     init() {

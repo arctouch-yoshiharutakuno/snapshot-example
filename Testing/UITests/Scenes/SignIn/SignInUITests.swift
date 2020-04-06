@@ -1,6 +1,6 @@
 import XCTest
 
-final class SignInUITests: UIITestBase {
+final class SignInUITests: UITestBase {
 
     override func setUpWithError() throws {
         try super.setUpWithError()
@@ -11,26 +11,17 @@ final class SignInUITests: UIITestBase {
     }
 
     func testValidSignIn() {
-        SignInScreen.emailTextfield.element.tapAndTypeText("yoshi@arctouch.com")
-        SignInScreen.passwordTextfield.element.tapAndTypeText("123")
-        hideKeyboard()
-        SignInScreen.signInButton.element.tap()
+        whenISignIn(with: "yoshi@arctouch.com", and: "123")
     }
 
     func testInvalidSignIn() {
-        SignInScreen.emailTextfield.element.tapAndTypeText("yoshi")
-        SignInScreen.passwordTextfield.element.tapAndTypeText("123")
-        hideKeyboard()
-        SignInScreen.signInButton.element.tap()
+        whenISignIn(with: "yoshi", and: "123")
         XCTAssertEqual(app.alerts.element.label, "Attention")
         XCTAssert(app.alerts.element.staticTexts["Invalid email or password"].exists)
     }
 
     func testEmptyValues() {
-        SignInScreen.emailTextfield.element.tapAndTypeText("")
-        SignInScreen.passwordTextfield.element.tapAndTypeText("")
-        hideKeyboard()
-        SignInScreen.signInButton.element.tap()
+        whenISignIn(with: "", and: "")
         XCTAssertEqual(app.alerts.element.label, "Attention")
         XCTAssert(app.alerts.element.staticTexts["Invalid email or password"].exists)
     }

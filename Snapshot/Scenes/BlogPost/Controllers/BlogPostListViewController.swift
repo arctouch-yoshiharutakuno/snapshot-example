@@ -10,12 +10,13 @@ final class BlogPostListViewController: UIViewController {
         super.viewDidLoad()
 
         configureViewModel()
-        configureTableViewCells()
+        configureTableView()
     }
 
-    private func configureTableViewCells() {
+    private func configureTableView() {
         let nib = UINib(nibName: viewModel.blogPostCellIdentifier, bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: viewModel.blogPostCellIdentifier)
+        tableView.accessibilityIdentifier = viewModel.blogPostTableViewIdentifier
     }
 
     private func configureViewModel() {

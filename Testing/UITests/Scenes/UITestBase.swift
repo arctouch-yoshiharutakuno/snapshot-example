@@ -1,6 +1,6 @@
 import XCTest
 
-class UIITestBase: XCTestCase {
+class UITestBase: XCTestCase {
 
     var app: XCUIApplication!
 
@@ -23,11 +23,15 @@ class UIITestBase: XCTestCase {
 
 }
 
-extension XCUIElement {
+extension UITestBase {
 
-    func tapAndTypeText(_ text: String) {
-        tap()
-        typeText(text)
+    func whenISignIn(with email: String, and password: String) {
+        XCTContext.runActivity(named: "When I Sign In (with username and password)") { _ in
+            SignInScreen.emailTextfield.element.tapAndTypeText(email)
+            SignInScreen.passwordTextfield.element.tapAndTypeText(password)
+            hideKeyboard()
+            SignInScreen.signInButton.element.tap()
+        }
     }
 
 }
