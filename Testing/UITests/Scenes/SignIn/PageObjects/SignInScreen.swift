@@ -1,9 +1,11 @@
 import XCTest
 
-enum SignInScreen: String {
+enum SignInScreen {
     case emailTextfield
     case passwordTextfield
     case signInButton
+    case alertTitle
+    case alertBody
 
     var element: XCUIElement {
         switch self {
@@ -13,6 +15,10 @@ enum SignInScreen: String {
             return XCUIApplication().secureTextFields["Password"]
         case .signInButton:
             return XCUIApplication().buttons["Sign in"]
+        case .alertTitle:
+            return XCUIApplication().alerts.element.staticTexts["Attention"]
+        case .alertBody:
+            return XCUIApplication().alerts.element.staticTexts["Invalid email or password"]
         }
     }
 }
