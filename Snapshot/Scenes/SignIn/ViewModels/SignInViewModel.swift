@@ -10,7 +10,6 @@ enum SignInViewModelState {
 final class SignInViewModel {
 
     @Published private(set) var state: SignInViewModelState = .none
-    private(set) lazy var blogPostSegueIdentifier = "BlogPostSegue"
 
     func signIn(email: String?,
                 password: String?) {

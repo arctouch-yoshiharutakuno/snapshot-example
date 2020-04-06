@@ -8,14 +8,12 @@ final class SignInUITests: UITestBase {
 
     func testInvalidSignIn() {
         whenISignIn(with: "yoshi", and: "123")
-        XCTAssert(SignInScreen.alertTitle.element.exists)
-        XCTAssert(SignInScreen.alertBody.element.exists)
+        XCTAssert(SignInScreen.alert.element.exists)
     }
 
     func testEmptyValues() {
         whenISignIn(with: "", and: "")
-        XCTAssert(SignInScreen.alertTitle.element.exists)
-        XCTAssert(SignInScreen.alertBody.element.exists)
+        XCTAssert(SignInScreen.alert.element.exists)
     }
 
 }

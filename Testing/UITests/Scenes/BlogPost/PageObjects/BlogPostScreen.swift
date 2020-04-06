@@ -1,12 +1,12 @@
 import XCTest
 
-enum BlogPostScreen {
-    case tableView
+enum BlogPostScreen: String {
+    case tableView = "blogPostTableView"
 
     var element: XCUIElement {
         switch self {
         case .tableView:
-            return XCUIApplication().tables.matching(identifier: "blogPostTableView").element
+            return XCUIApplication().tables.matching(identifier: rawValue).element
         }
     }
 }

@@ -1,24 +1,21 @@
 import XCTest
 
-enum SignInScreen {
-    case emailTextfield
-    case passwordTextfield
-    case signInButton
-    case alertTitle
-    case alertBody
+enum SignInScreen: String {
+    case emailTextfield = "emailTextField"
+    case passwordTextfield = "passwordTextField"
+    case signInButton = "signInButton"
+    case alert = "alertController"
 
     var element: XCUIElement {
         switch self {
         case .emailTextfield:
-            return XCUIApplication().textFields["Email"]
+            return XCUIApplication().textFields[rawValue]
         case .passwordTextfield:
-            return XCUIApplication().secureTextFields["Password"]
+            return XCUIApplication().secureTextFields[rawValue]
         case .signInButton:
-            return XCUIApplication().buttons["Sign in"]
-        case .alertTitle:
-            return XCUIApplication().alerts.element.staticTexts["Attention"]
-        case .alertBody:
-            return XCUIApplication().alerts.element.staticTexts["Invalid email or password"]
+            return XCUIApplication().buttons[rawValue]
+        case .alert:
+            return XCUIApplication().alerts[rawValue]
         }
     }
 }

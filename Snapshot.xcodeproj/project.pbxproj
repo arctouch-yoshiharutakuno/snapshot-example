@@ -10,6 +10,7 @@
 		0CD0F0471535C3492A85BD48 /* Pods_Snapshot_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1A3C6CE626B49052B171EF /* Pods_Snapshot_UITests.framework */; };
 		3022A90F923E5B2600C0628B /* Pods_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B7CD09FF66C7C7BCDA596E /* Pods_UnitTests.framework */; };
 		3C6E4502D37223B1144CECF3 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		BF16306A243BDF8D00302612 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF163069243BDF8D00302612 /* Identifiers.swift */; };
 		BF4B3A8E2437863B008F8035 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */; };
 		BF4B3A9124379F0A008F8035 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A9024379F0A008F8035 /* String+Extension.swift */; };
 		BF4B3A932437A600008F8035 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */; };
@@ -80,6 +81,7 @@
 		B0964ECFBE266D5935FCB8BA /* Pods-Snapshot-SnapshotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot-SnapshotUITests.release.xcconfig"; path = "Target Support Files/Pods-Snapshot-SnapshotUITests/Pods-Snapshot-SnapshotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA7D3A1A16538BAEBF494682 /* Pods-Snapshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.debug.xcconfig"; path = "Target Support Files/Pods-Snapshot/Pods-Snapshot.debug.xcconfig"; sourceTree = "<group>"; };
 		BC20860547C8902AAAE606BB /* Pods-Snapshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapshot.release.xcconfig"; path = "Target Support Files/Pods-Snapshot/Pods-Snapshot.release.xcconfig"; sourceTree = "<group>"; };
+		BF163069243BDF8D00302612 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		BF4B3A8D2437863B008F8035 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		BF4B3A9024379F0A008F8035 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BF4B3A922437A600008F8035 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 				6373D5CE12E8AABAD6900AB1 /* Pods-Snapshot-SnapshotTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF163068243BDF5D00302612 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF163069243BDF8D00302612 /* Identifiers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BF4B3A8F24379EDC008F8035 /* Extensions */ = {
@@ -373,6 +383,7 @@
 			children = (
 				BF50BED7243655AA001A1187 /* Application */,
 				BF4B3A8F24379EDC008F8035 /* Extensions */,
+				BF163068243BDF5D00302612 /* Helpers */,
 				BF50BED8243655C7001A1187 /* Resources */,
 				BF50BED9243655ED001A1187 /* Scenes */,
 				BF87C8042436435300737959 /* Info.plist */,
@@ -779,6 +790,7 @@
 				BF4B3A9124379F0A008F8035 /* String+Extension.swift in Sources */,
 				BFEA8BC6243B9E48004B6028 /* UIView+Extension.swift in Sources */,
 				BF87C7F92436435300737959 /* SceneDelegate.swift in Sources */,
+				BF16306A243BDF8D00302612 /* Identifiers.swift in Sources */,
 				BFEA8BC9243BA414004B6028 /* BlogPostListCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
