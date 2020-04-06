@@ -6,7 +6,7 @@ final class SignInController: UIViewController {
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
 
-    private var viewModel: SignInViewModel?
+    private var viewModel: SignInViewModel!
     private var subscriber: AnyCancellable?
 
     override func viewDidLoad() {
@@ -17,13 +17,13 @@ final class SignInController: UIViewController {
 
     private func configureViewModel() {
         viewModel = SignInViewModel()
-        subscriber = viewModel?.$state.sink(receiveValue: { [weak self] state in
+        subscriber = viewModel.$state.sink(receiveValue: { [weak self] state in
             self?.stateDidChange(withState: state)
         })
     }
 
     @IBAction private func signinDidTap(_ sender: Any) {
-        viewModel?.signIn(email: emailTextField.text, password: passwordTextField.text)
+        viewModel.signIn(email: emailTextField.text, password: passwordTextField.text)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -39,7 +39,10 @@ extension SignInController {
         case .loading:
             setLoadingViewVisible(true)
         case .success:
-            setLoadingViewVisible(false)
+            setLoadingViewVisible(false) { [weak self] in
+                guard let self = self else { return }
+                self.performSegue(withIdentifier: self.viewModel.blogPostSegueIdentifier, sender: nil)
+            }
         case .error(let error):
             setLoadingViewVisible(false) { [weak self] in
                 self?.showAlert(message: error)

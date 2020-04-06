@@ -77,11 +77,22 @@
                     <connections>
                         <outlet property="emailTextField" destination="LNo-b4-rn9" id="6LI-pt-PBi"/>
                         <outlet property="passwordTextField" destination="XeD-OB-FhZ" id="qEN-fg-58L"/>
+                        <segue destination="6vR-MJ-ucT" kind="showDetail" identifier="BlogPostSegue" id="qpT-ov-f9T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--BlogPost-->
+        <scene sceneID="Zgn-JE-bXK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BlogPost" id="6vR-MJ-ucT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vrB-7k-OA1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="661-e0-Uvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="139"/>
         </scene>
     </scenes>
     <resources>
