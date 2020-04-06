@@ -27,8 +27,8 @@ extension UITestBase {
 
     func whenISignIn(with email: String, and password: String) {
         XCTContext.runActivity(named: "When I Sign In (with username and password)") { _ in
-            SignInScreen.emailTextfield.element.tapAndTypeText(email)
-            SignInScreen.passwordTextfield.element.tapAndTypeText(password)
+            SignInScreen.emailTextField.element.tapAndTypeText(email)
+            SignInScreen.passwordTextField.element.tapAndTypeText(password)
             hideKeyboard()
             SignInScreen.signInButton.element.tap()
         }

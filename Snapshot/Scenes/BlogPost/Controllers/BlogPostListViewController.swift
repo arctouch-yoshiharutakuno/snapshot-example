@@ -13,14 +13,14 @@ final class BlogPostListViewController: UIViewController {
         configureTableView()
     }
 
+    private func configureViewModel() {
+        viewModel = BlogPostListViewModel()
+    }
+
     private func configureTableView() {
         let nib = UINib(nibName: BlogPostIdentifiers.cell, bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: BlogPostIdentifiers.cell)
         tableView.accessibilityIdentifier = BlogPostIdentifiers.tableView
-    }
-
-    private func configureViewModel() {
-        viewModel = BlogPostListViewModel()
     }
 
 }

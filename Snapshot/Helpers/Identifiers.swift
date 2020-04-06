@@ -9,6 +9,6 @@ enum SignInIdentifiers {
 }
 
 enum BlogPostIdentifiers {
-    static let tableView = "blogPostTableView"
+    static let tableView = "tableView"
     static let cell = "BlogPostListTableViewCell"
 }

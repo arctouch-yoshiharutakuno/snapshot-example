@@ -1,7 +1,7 @@
 import XCTest
 
 enum BlogPostScreen: String {
-    case tableView = "blogPostTableView"
+    case tableView
 
     var element: XCUIElement {
         switch self {
