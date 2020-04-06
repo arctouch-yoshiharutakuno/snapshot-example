@@ -8,11 +8,15 @@ target 'Snapshot' do
   # Pods for Snapshot
 
   target 'SnapshotTests' do
-    inherit! :search_paths
     pod 'PixelTest'
   end
 
-  target 'SnapshotUITests' do
+  target 'UnitTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'UITests' do
     # Pods for testing
   end
 

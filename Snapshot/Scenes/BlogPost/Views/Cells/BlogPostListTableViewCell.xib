@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BlogPostListTableViewCell" rowHeight="169" id="84U-4Q-u8n" customClass="BlogPostListTableViewCell" customModule="Snapshot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="84U-4Q-u8n" id="Wjs-Q8-Yz3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRm-OJ-jad">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M11-YZ-WcT">
+                        <rect key="frame" x="0.0" y="134" width="414" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cuo-AG-SiB">
+                                <rect key="frame" x="6" y="8" width="402" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cuo-AG-SiB" firstAttribute="leading" secondItem="M11-YZ-WcT" secondAttribute="leading" constant="6" id="MAg-hx-yTF"/>
+                            <constraint firstAttribute="trailing" secondItem="cuo-AG-SiB" secondAttribute="trailing" constant="6" id="Ohp-li-Oup"/>
+                            <constraint firstAttribute="height" constant="35" id="RrW-Wb-LMn"/>
+                            <constraint firstItem="cuo-AG-SiB" firstAttribute="centerY" secondItem="M11-YZ-WcT" secondAttribute="centerY" id="b3X-Ty-fO9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gRm-OJ-jad" firstAttribute="top" secondItem="Wjs-Q8-Yz3" secondAttribute="top" id="Ee3-I0-H9v"/>
+                    <constraint firstItem="M11-YZ-WcT" firstAttribute="leading" secondItem="Wjs-Q8-Yz3" secondAttribute="leading" id="KJr-6B-j0r"/>
+                    <constraint firstAttribute="trailing" secondItem="M11-YZ-WcT" secondAttribute="trailing" id="LxV-hm-Q1o"/>
+                    <constraint firstItem="gRm-OJ-jad" firstAttribute="leading" secondItem="Wjs-Q8-Yz3" secondAttribute="leading" id="Th5-u2-iW9"/>
+                    <constraint firstAttribute="bottom" secondItem="gRm-OJ-jad" secondAttribute="bottom" id="U3d-u6-WUF"/>
+                    <constraint firstAttribute="bottom" secondItem="M11-YZ-WcT" secondAttribute="bottom" id="fqy-hN-AeE"/>
+                    <constraint firstAttribute="trailing" secondItem="gRm-OJ-jad" secondAttribute="trailing" id="mCT-oT-Yuu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blogPostImageView" destination="gRm-OJ-jad" id="Hu1-af-aEF"/>
+                <outlet property="titleLabel" destination="cuo-AG-SiB" id="5AR-Xz-cue"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
